@@ -30,7 +30,10 @@ const stripe = require('stripe')(functions.config().stripe.secret, {
  * When a user is created, create a Stripe customer object for them.
  */
 exports.createStripeCustomer = functions.auth.user().onCreate(async (user) => {
-  const customer = await stripe.customers.create({ email: user.email });
+  const customer = await stripe.customers.create({
+    email: user.email,
+    metadata: { firebaseUID: user.uid },
+  });
 
   await admin.firestore().collection('stripe_customers').doc(user.uid).set({
     customer_id: customer.id,
