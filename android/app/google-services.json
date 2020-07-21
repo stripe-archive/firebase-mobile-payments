@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "681888826389",
+    "firebase_url": "https://firestripe-mobile-payments.firebaseio.com",
+    "project_id": "firestripe-mobile-payments",
+    "storage_bucket": "firestripe-mobile-payments.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681888826389:android:502e329e9eb88c3b9cba1c",
+        "android_client_info": {
+          "package_name": "com.example.firebasemobilepayments"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681888826389-i0nhfe9sjh8o60cpmhuj3rfq0qs1mbqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRiK7Eb92ravBNoAOM64lBv1RYiJyyqn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "681888826389-i0nhfe9sjh8o60cpmhuj3rfq0qs1mbqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
