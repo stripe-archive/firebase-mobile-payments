@@ -8,7 +8,6 @@
     "stripe": "^8.56.0"
   },
   "scripts": {
-    "serve": "firebase serve --only functions",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
   },

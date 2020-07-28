@@ -11,5 +11,6 @@
 - [Add your Stripe API Secret Key](https://dashboard.stripe.com/account/apikeys) to firebase config:
   ```bash
   firebase functions:config:set stripe.secret=<YOUR STRIPE SECRET KEY>
+  firebase functions:config:set stripe.webhooksecret=<YOUR WEBHOOK SECRET>
   ```
 - Deploy your project using `cd functions; npm run deploy; cd -`
