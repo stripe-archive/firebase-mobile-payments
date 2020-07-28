@@ -155,6 +155,7 @@ exports.handleWebhookEvents = functions.https.onRequest(async (req, resp) => {
       functions.config().stripe.webhooksecret
     );
   } catch (error) {
+    console.error('❗️ Webhook Error: Invalid Secret');
     resp.status(401).send('Webhook Error: Invalid Secret');
     return;
   }
@@ -174,7 +175,7 @@ exports.handleWebhookEvents = functions.https.onRequest(async (req, resp) => {
       }
     } catch (error) {
       console.error(
-        `❗️Webhook error for [${event.data.object.id}]`,
+        `❗️ Webhook error for [${event.data.object.id}]`,
         error.message
       );
       resp.status(400).send('Webhook handler failed. View Function logs.');
