@@ -12,6 +12,12 @@ This example includes Firebase [Cloud Functions](/functions) to create payments 
   - Function to create a PaymentIntent when a new payment doc is added to Cloud Firestore: [createStripePayment](/functions/index.js#81)
   - Webhook handler function to keep Cloud Firestore in sync with Stripe: [handleWebhookEvents](/functions/index.js#137)
   - When a user is deleted from Firebase Authentication, delete thir data in Cloud Firestore and their customer object in Stripe: [cleanupUser](/functions/index.js#193)
+  
+<details open><summary><strong>Video tutorial: Android</strong></summary>
+  <a href="https://www.youtube.com/watch?v=nw7rOijQKo8">
+    <img src="https://img.youtube.com/vi/nw7rOijQKo8/0.jpg" alt="Link to video tutorial">
+  </a>
+</details>
 
 ## Recommended usage
 
