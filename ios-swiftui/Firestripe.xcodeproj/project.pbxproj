@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		2D836FAF25FA22B8002FBC1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D836FAE25FA22B8002FBC1E /* ContentView.swift */; };
 		2D836FB125FA22BB002FBC1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D836FB025FA22BB002FBC1E /* Assets.xcassets */; };
 		2D836FB425FA22BB002FBC1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D836FB325FA22BB002FBC1E /* Preview Assets.xcassets */; };
+		2DFC5CAE25FA2D57000014CB /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC5CAD25FA2D57000014CB /* SessionStore.swift */; };
+		2DFC5CB125FA2DC2000014CB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC5CB025FA2DC2000014CB /* User.swift */; };
+		2DFC5CB425FA318D000014CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DFC5CB325FA318D000014CB /* GoogleService-Info.plist */; };
+		2DFC5CB725FA31BC000014CB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC5CB625FA31BC000014CB /* LoginView.swift */; };
 		5B60E78821A3E31A40B993E4 /* Pods_Firestripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF65CB6B63ADEDD18A0A2C09 /* Pods_Firestripe.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +26,10 @@
 		2D836FB025FA22BB002FBC1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D836FB325FA22BB002FBC1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D836FB525FA22BB002FBC1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DFC5CAD25FA2D57000014CB /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		2DFC5CB025FA2DC2000014CB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2DFC5CB325FA318D000014CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2DFC5CB625FA31BC000014CB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EB1B511F2F4CB6B3DFF10057 /* Pods-Firestripe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firestripe.debug.xcconfig"; path = "Target Support Files/Pods-Firestripe/Pods-Firestripe.debug.xcconfig"; sourceTree = "<group>"; };
 		EF65CB6B63ADEDD18A0A2C09 /* Pods_Firestripe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firestripe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,11 +75,15 @@
 		2D836FAB25FA22B8002FBC1E /* Firestripe */ = {
 			isa = PBXGroup;
 			children = (
+				2DFC5CB325FA318D000014CB /* GoogleService-Info.plist */,
 				2D836FAC25FA22B8002FBC1E /* FirestripeApp.swift */,
 				2D836FAE25FA22B8002FBC1E /* ContentView.swift */,
 				2D836FB025FA22BB002FBC1E /* Assets.xcassets */,
 				2D836FB525FA22BB002FBC1E /* Info.plist */,
 				2D836FB225FA22BB002FBC1E /* Preview Content */,
+				2DFC5CAD25FA2D57000014CB /* SessionStore.swift */,
+				2DFC5CB025FA2DC2000014CB /* User.swift */,
+				2DFC5CB625FA31BC000014CB /* LoginView.swift */,
 			);
 			path = Firestripe;
 			sourceTree = "<group>";
@@ -90,7 +102,6 @@
 				EB1B511F2F4CB6B3DFF10057 /* Pods-Firestripe.debug.xcconfig */,
 				131B6AFB8241362D9C2C3BC7 /* Pods-Firestripe.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -155,6 +166,7 @@
 			files = (
 				2D836FB425FA22BB002FBC1E /* Preview Assets.xcassets in Resources */,
 				2D836FB125FA22BB002FBC1E /* Assets.xcassets in Resources */,
+				2DFC5CB425FA318D000014CB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFC5CB125FA2DC2000014CB /* User.swift in Sources */,
 				2D836FAF25FA22B8002FBC1E /* ContentView.swift in Sources */,
 				2D836FAD25FA22B8002FBC1E /* FirestripeApp.swift in Sources */,
+				2DFC5CB725FA31BC000014CB /* LoginView.swift in Sources */,
+				2DFC5CAE25FA2D57000014CB /* SessionStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

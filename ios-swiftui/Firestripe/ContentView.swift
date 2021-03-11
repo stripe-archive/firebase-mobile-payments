@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+		@ObservedObject var sessionStore = SessionStore()
+	
+		func getUser () {
+				sessionStore.listen()
+		}
+	
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+			VStack {
+				if let user = sessionStore.user {
+					VStack{
+						Text(user.email!)
+						Button("Sign out") {
+								sessionStore.signOut()
+						}
+					}
+				} else {
+					LoginView()
+				}
+			}.onAppear(perform: getUser)
     }
 }
 

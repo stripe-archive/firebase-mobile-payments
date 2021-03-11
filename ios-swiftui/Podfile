@@ -7,5 +7,7 @@ target 'Firestripe' do
 
   # Pods for Firestripe
   pod 'Stripe', :git => 'https://github.com/stripe/stripe-ios.git', :branch => 'mc-beta-2'
+	pod 'Firebase/Firestore'
+	pod 'Firebase/Auth'
 
 end
