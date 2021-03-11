@@ -86,7 +86,7 @@ exports.createStripePayment = functions.firestore
         },
         { idempotencyKey }
       );
-      payment.ephemeralKey = ephemeralKey;
+      payment.ephemeralKey = ephemeralKey.secret;
       // If the result is successful, write it back to the database.
       await snap.ref.set(payment);
     } catch (error) {

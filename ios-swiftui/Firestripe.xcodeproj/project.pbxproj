@@ -15,6 +15,7 @@
 		2DFC5CB125FA2DC2000014CB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC5CB025FA2DC2000014CB /* User.swift */; };
 		2DFC5CB425FA318D000014CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DFC5CB325FA318D000014CB /* GoogleService-Info.plist */; };
 		2DFC5CB725FA31BC000014CB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC5CB625FA31BC000014CB /* LoginView.swift */; };
+		2DFC5CBA25FA3C1A000014CB /* PaymentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC5CB925FA3C1A000014CB /* PaymentStore.swift */; };
 		5B60E78821A3E31A40B993E4 /* Pods_Firestripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF65CB6B63ADEDD18A0A2C09 /* Pods_Firestripe.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		2DFC5CB025FA2DC2000014CB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2DFC5CB325FA318D000014CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2DFC5CB625FA31BC000014CB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2DFC5CB925FA3C1A000014CB /* PaymentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentStore.swift; sourceTree = "<group>"; tabWidth = 4; };
 		EB1B511F2F4CB6B3DFF10057 /* Pods-Firestripe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firestripe.debug.xcconfig"; path = "Target Support Files/Pods-Firestripe/Pods-Firestripe.debug.xcconfig"; sourceTree = "<group>"; };
 		EF65CB6B63ADEDD18A0A2C09 /* Pods_Firestripe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firestripe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				2DFC5CAD25FA2D57000014CB /* SessionStore.swift */,
 				2DFC5CB025FA2DC2000014CB /* User.swift */,
 				2DFC5CB625FA31BC000014CB /* LoginView.swift */,
+				2DFC5CB925FA3C1A000014CB /* PaymentStore.swift */,
 			);
 			path = Firestripe;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			files = (
 				2DFC5CB125FA2DC2000014CB /* User.swift in Sources */,
 				2D836FAF25FA22B8002FBC1E /* ContentView.swift in Sources */,
+				2DFC5CBA25FA3C1A000014CB /* PaymentStore.swift in Sources */,
 				2D836FAD25FA22B8002FBC1E /* FirestripeApp.swift in Sources */,
 				2DFC5CB725FA31BC000014CB /* LoginView.swift in Sources */,
 				2DFC5CAE25FA2D57000014CB /* SessionStore.swift in Sources */,

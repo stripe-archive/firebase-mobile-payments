@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 import Firebase
-import Combine
 
 class SessionStore : ObservableObject {
 		@Published var user: User?
