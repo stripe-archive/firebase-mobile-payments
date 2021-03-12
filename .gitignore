@@ -3,6 +3,9 @@
 **/.firebaserc
 */npm-debug.log
 
+## Xcode
+**/xcuserdata/*
+
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
@@ -12,4 +15,4 @@
 Pods/
 
 ## Firebase
-*/GoogleService-Info.plist
+**/GoogleService-Info.plist
