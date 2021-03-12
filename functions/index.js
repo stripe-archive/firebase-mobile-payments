@@ -71,6 +71,10 @@ exports.createStripePayment = functions.firestore
     try {
       // Look up the Stripe customer id.
       const customer = (await snap.ref.parent.parent.get()).data().customer_id;
+      const ephemeralKey = await stripe.ephemeralKeys.create(
+        { customer },
+        { apiVersion: '2020-08-27' }
+      );
       // Create a charge using the pushId as the idempotency key
       // to protect against double charges.
       const idempotencyKey = context.params.pushId;
@@ -82,6 +86,7 @@ exports.createStripePayment = functions.firestore
         },
         { idempotencyKey }
       );
+      payment.ephemeralKey = ephemeralKey.secret;
       // If the result is successful, write it back to the database.
       await snap.ref.set(payment);
     } catch (error) {

@@ -5,14 +5,14 @@ This example includes Firebase [Cloud Functions](/functions) to create payments 
 **Features:**
 
 - [Android client](/android)
-- iOS client (coming soon)
+- [iOS SwiftUI client](/ios-swiftui)
 - Functions
   - Create a customer object when a users signs up via Firebase Authentication and add a customer entry to Cloud Firestore: [createStripeCustomer](/functions/index.js#L32)
   - Callable functions to create a short-lived ephemeral keys for the SDK's prebuilt UI components: [createEphemeralKey](/functions/index.js#49)
   - Function to create a PaymentIntent when a new payment doc is added to Cloud Firestore: [createStripePayment](/functions/index.js#81)
   - Webhook handler function to keep Cloud Firestore in sync with Stripe: [handleWebhookEvents](/functions/index.js#137)
   - When a user is deleted from Firebase Authentication, delete thir data in Cloud Firestore and their customer object in Stripe: [cleanupUser](/functions/index.js#193)
-  
+
 <details open><summary><strong>Video tutorial: Android</strong></summary>
   <a href="https://www.youtube.com/watch?v=nw7rOijQKo8">
     <img src="https://img.youtube.com/vi/nw7rOijQKo8/0.jpg" alt="Link to video tutorial">
