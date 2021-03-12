@@ -1,5 +1,7 @@
 # iOS SwiftUI client
 
+> ⚠️ PLEASE NOTE: This implementation uses the Mobile Payments UI beta. For more info and updates please see https://stripe.com/docs/mobile/payments-ui-beta
+
 ## Configuration
 
 ### 1. Configure the app with Firebase
