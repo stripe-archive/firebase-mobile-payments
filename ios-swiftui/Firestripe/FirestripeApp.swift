@@ -19,9 +19,9 @@ struct FirestripeApp: App {
 		StripeAPI.defaultPublishableKey = "pk_test_xxxxx"
 	}
 	
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+	var body: some Scene {
+		WindowGroup {
+			ContentView()
+		}
+	}
 }

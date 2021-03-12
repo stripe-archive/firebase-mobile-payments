@@ -32,13 +32,13 @@ class PaymentStore : ObservableObject {
 		}
 		ref?.addSnapshotListener { documentSnapshot, error in
 			guard let document = documentSnapshot else {
-			   print("Error fetching document: \(error!)")
-			   return
-			 }
+				print("Error fetching document: \(error!)")
+				return
+			}
 			guard let data = document.data() else {
-			   print("Document data was empty.")
-			   return
-			 }
+				print("Document data was empty.")
+				return
+			}
 			print("Current data: \(data)")
 			
 			let customer = data["customer"]
@@ -52,8 +52,8 @@ class PaymentStore : ObservableObject {
 				configuration.customer = .init(id: customer as! String, ephemeralKeySecret: ephemeralKey as! String)
 				
 				DispatchQueue.main.async {
-				  self.paymentSheet = PaymentSheet(paymentIntentClientSecret: clientSecret as! String, configuration: configuration)
-				  self.isLoading = false
+					self.paymentSheet = PaymentSheet(paymentIntentClientSecret: clientSecret as! String, configuration: configuration)
+					self.isLoading = false
 				}
 			}
 		}
