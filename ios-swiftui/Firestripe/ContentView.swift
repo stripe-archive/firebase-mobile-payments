@@ -37,17 +37,17 @@ struct ContentView: View {
 						}.disabled(paymentStore.isLoading)
 					}
 					if let result = paymentStore.paymentResult {
-						VStack{
-							switch result {
-							case .completed(let pi):
-								Text("Payment complete: (\(pi.stripeId))")
-							case .failed(let error, _):
-								Text("Payment failed: \(error.localizedDescription)")
-							case .canceled(_):
-								Text("Payment canceled.")
-							}
-						}
-					}
+                        VStack{
+                            switch result {
+                            case .completed:
+                                Text("Payment complete")
+                            case .failed(let error):
+                                Text("Payment failed: \(error.localizedDescription)")
+                            case .canceled:
+                                Text("Payment canceled.")
+                            }
+                        }
+                    }
 				}
 			} else {
 				LoginView()

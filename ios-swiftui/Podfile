@@ -6,7 +6,7 @@ target 'Firestripe' do
   use_frameworks!
 
   # Pods for Firestripe
-  pod 'Stripe', :git => 'https://github.com/stripe/stripe-ios.git', :branch => 'mc-beta-2'
+  pod 'Stripe'
 	pod 'Firebase/Auth'
 	pod 'Firebase/Firestore'
 	pod 'FirebaseFirestoreSwift'

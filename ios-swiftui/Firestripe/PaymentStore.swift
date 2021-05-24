@@ -11,7 +11,7 @@ import Stripe
 
 class PaymentStore : ObservableObject {
 	@Published var paymentSheet: PaymentSheet?
-	@Published var paymentResult: PaymentResult?
+	@Published var paymentResult: PaymentSheetResult?
 	@Published var isLoading = false
 	
 	func preparePayment(uid: String, amount: Int, currency: String) {
@@ -59,7 +59,7 @@ class PaymentStore : ObservableObject {
 		}
 	}
 	
-	func onPaymentCompletion(result: PaymentResult) {
+	func onPaymentCompletion(result: PaymentSheetResult) {
 		self.paymentSheet = nil
 		self.paymentResult = result
 	}

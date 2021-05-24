@@ -1,6 +1,8 @@
 # iOS SwiftUI client
 
-> ⚠️ PLEASE NOTE: This implementation uses the Mobile Payments UI beta. For more info and updates please see https://stripe.com/docs/mobile/payments-ui-beta
+This example uses Stripe’s new [prebuilt payment UI](https://stripe.com/docs/payments/accept-a-payment?platform=ios&ui=payment-sheet&uikit-swiftui=swiftui). This integration combines all of the steps required to pay, collecting payment details, and confirming the payment into a single sheet that displays on top of your app.
+
+![Screenshots of prebuilt payment UI](https://b.stripecdn.com/docs/assets/overview-complete.f08cdac19b6948ac6035828dd35c59aa.png)
 
 ## Configuration
 

@@ -303,15 +303,15 @@ PODS:
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.12)
-  - Stripe (21.0.0-mc-beta-1):
-    - Stripe/Stripe3DS2 (= 21.0.0-mc-beta-1)
-  - Stripe/Stripe3DS2 (21.0.0-mc-beta-1)
+  - Stripe (21.5.1):
+    - Stripe/Stripe3DS2 (= 21.5.1)
+  - Stripe/Stripe3DS2 (21.5.1)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - FirebaseFirestoreSwift
-  - Stripe (from `https://github.com/stripe/stripe-ios.git`, branch `mc-beta-2`)
+  - Stripe
 
 SPEC REPOS:
   trunk:
@@ -331,16 +331,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
-
-EXTERNAL SOURCES:
-  Stripe:
-    :branch: mc-beta-2
-    :git: https://github.com/stripe/stripe-ios.git
-
-CHECKOUT OPTIONS:
-  Stripe:
-    :commit: afeb50345446f889ca4cc076299ff6e4143e222d
-    :git: https://github.com/stripe/stripe-ios.git
+    - Stripe
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -359,8 +350,8 @@ SPEC CHECKSUMS:
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  Stripe: 4f9369bb8f036ed106d12355e622d934c2ec60a1
+  Stripe: 515db5536fd659b5d79a0898ce1b882b61ab597e
 
-PODFILE CHECKSUM: b03113fd1b822d6aaf1ca1d2658eeb19b426ea12
+PODFILE CHECKSUM: ad40a2341cb27ea68a48c7b761b84ea226c8d63d
 
 COCOAPODS: 1.10.1
