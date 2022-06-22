@@ -3,7 +3,7 @@
   "description": "Stripe Firebase Functions for native mobile.",
   "dependencies": {
     "@google-cloud/logging": "^9.1.0",
-    "firebase-admin": "^9.5.0",
+    "firebase-admin": "^10.3.0",
     "firebase-functions": "^3.13.2",
     "stripe": "^8.138.0"
   },
