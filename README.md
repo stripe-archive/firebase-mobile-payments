@@ -1,3 +1,7 @@
+> <img src="https://stripe.dev/images/badges/archived.png" width="250">
+>
+> This project is inactive and is no longer being maintained.
+
 # Firebase mobile payments: Android & iOS with Cloud Functions for Firebase
 
 This example includes Firebase [Cloud Functions](/functions) to create payments in native [Android](/android) and iOS (coming soon) applications.
